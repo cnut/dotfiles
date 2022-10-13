@@ -164,7 +164,10 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'fatih/vim-go'
+" git plugin
 Plugin 'tpope/vim-fugitive'
+Plugin 'vim-gitgutter'
+
 Plugin 'vim-scripts/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
