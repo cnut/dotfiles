@@ -210,3 +210,6 @@ filetype plugin indent on    " required
 "colorscheme codedark
 set background=dark
 colorscheme solarized
+
+" let vim-gitgutter show diff much fast, default value is 4 second.
+set updatetime=100
