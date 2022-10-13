@@ -187,6 +187,11 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'altercation/vim-colors-solarized'
 
+"Plugin 'itchyny/lightline.vim'
+
+Plugin 'vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -202,14 +207,26 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" let vim-gitgutter show diff much fast, default value is 4 second.
+" to notice, if updatetime is too small, color shown is wrong.
+set updatetime=800
+
+" airlien theme
+"let g:airline_theme='solarized'
+"let g:airline_theme = 'dark'
+"let g:airline_solarized_bg='dark'
+let g:airline_theme='tomorrow'
+" airline tab
+let g:airline#extensions#tabline#enabled = 1
+" us etab key to switch vim buffer
+nnoremap <tab>   :bnext<CR>
+
 " ---------------
 " Color
 " ---------------
 "set t_Co=256
+"set t_Co=tmux-256color
 "set t_ut=
 "colorscheme codedark
 set background=dark
 colorscheme solarized
-
-" let vim-gitgutter show diff much fast, default value is 4 second.
-set updatetime=100
