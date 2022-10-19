@@ -1,3 +1,7 @@
+# enable zsh complete
+autoload -Uz compinit
+compinit
+
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export GOPATH=~/ws/golang
 export TEXLIVE_PATH=/usr/local/texlive/2022/bin/universal-darwin
@@ -8,5 +12,6 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottl
 
 alias ll='ls -l -G'
 alias ls='ls -G'
+alias k='kubectl'
 
-#[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
