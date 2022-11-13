@@ -13,5 +13,7 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottl
 alias ll='ls -l -G'
 alias ls='ls -G'
 alias k='kubectl'
+alias m='make'
+alias v='vim'
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)

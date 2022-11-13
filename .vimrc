@@ -110,7 +110,7 @@ autocmd filetype sh setlocal ts=4 | setlocal sw=4 | setlocal softtabstop=4 | set
 autocmd filetype srt setlocal ts=4 | setlocal sw=4 | setlocal softtabstop=4 | setlocal expandtab
 autocmd filetype vim setlocal ts=2 | setlocal sw=2 | setlocal expandtab
 autocmd filetype markdown setlocal ts=2 | setlocal sw=2 | setlocal expandtab
-autocmd filetype go setlocal ts=4 | setlocal sw=4 | setlocal noexpandtab
+autocmd filetype go setlocal ts=8 | setlocal sw=8 | setlocal noexpandtab
 autocmd filetype go setlocal makeprg=gomake
 
 " ----------------------------------------
