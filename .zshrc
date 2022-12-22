@@ -2,6 +2,8 @@
 autoload -Uz compinit
 compinit
 
+alias gitdotf='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export GOPATH=~/ws/golang
 export TEXLIVE_PATH=/usr/local/texlive/2022/bin/universal-darwin
@@ -15,5 +17,6 @@ alias ls='ls -G'
 alias k='kubectl'
 alias m='make'
 alias v='vim'
+
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
