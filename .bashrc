@@ -3,6 +3,7 @@ compinit
 
 alias gitdotf='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 
+export PATH=~/local/go/bin:$PATH
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export GOPATH=~/ws/golang
 export TEXLIVE_PATH=/usr/local/texlive/2022/bin/universal-darwin
